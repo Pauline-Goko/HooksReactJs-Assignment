@@ -1,0 +1,14 @@
+.add{
+    background-color: rgb(41, 137, 226);
+    padding: 5px 20px;
+    border-radius: 5px;
+    border-style: solid 1px;
+    
+}
+
+#addproduct{
+    text-align: center;
+    margin-top: 6%;
+    color: white;
+    
+}

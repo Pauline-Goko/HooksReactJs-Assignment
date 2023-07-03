@@ -1,0 +1,29 @@
+.form{
+    width: 50%;
+    margin: 0 auto;
+    border: solid black;
+    border: none;
+   
+}
+
+.form > input{
+    padding: 12px 20px;
+    width:  70%;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+
+.form > Link{
+    background-color: aqua;
+}
+
+#login{
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    background-color: rgb(5, 66, 136);
+    border-radius: 5px;
+    color: #FFFFFF;
+
+}
