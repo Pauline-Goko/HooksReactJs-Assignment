@@ -5,18 +5,15 @@ import './style.css';
 
 const AddProduct = () => {
   const navigate = useNavigate();
-  const [productName, setProductName] = useState('');
-  const [productPrice, setProductPrice] = useState('');
+  const [productName, setProductName] = useState([]);
+  const [productPrice, setProductPrice] = useState([]);
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform the necessary action to add the new product
-    // Carry the new product details in queryParams
     const queryParams = new URLSearchParams({
       name: productName,
       price: productPrice,
-      // other product data
     }).toString();
-    // Navigate back to the product list page with queryParams
     navigate(`/products?${queryParams}`);
   };
   return (
@@ -24,7 +21,7 @@ const AddProduct = () => {
       <h1>Add Product</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="productName">Name:</label>
+          <label htmlFor="productName" className='name'>Name:</label>
           <input
             type="text"
             id="productName"
@@ -35,7 +32,7 @@ const AddProduct = () => {
         </div>
         <div>
           <br></br>
-          <label htmlFor="productPrice">Price:</label>
+          <label htmlFor="productPrice" className='price'>Price:</label>
           <input
             type="number"
             id="productPrice"
@@ -52,3 +49,5 @@ const AddProduct = () => {
 };
 
 export default AddProduct;
+
+

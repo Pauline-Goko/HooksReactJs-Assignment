@@ -1,19 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-// import Login  from './Login';
-
-// function App() {
-//   return (
-//     <div>
-//       <Login/>
-      
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 
 import React from 'react';
 import './App.css';
@@ -44,7 +28,7 @@ const App = () => {
       <Routes>
         <Route path="/products" element={<Products />} />
         <Route path="/product/:productId" element={<ProductDetailsPage />} />
-        <Route path="/add-product" element={<AddProduct />} />
+        <Route path="/addproduct" element={<AddProduct />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
